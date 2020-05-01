@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.empty {
+  height: 80px;
+}
+
+header form {
+  margin: 0 auto;
+}
+
+header form input {
+  height: 62px;
+  border-radius: 0;
+  padding: 10px 25px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+header .avatar {
+  margin: 0 2%;
+}
+
+header .avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .navbar-expand-lg {
+  background: black;
+}
+
+header .navbar-expand-lg .navbar-nav {
+  margin: 0 auto;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-item {
+  margin-left: 34px;
+  color: #626262;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-item:hover {
+  color: white;
+}
+
+header .navbar-expand-lg .navbar-nav .current {
+  color: white;
+}
+
+header .navbar-expand-lg .navbar-nav .complete {
+  color: #626262;
+}
+
+.profile {
+  padding: 50px 0;
+}
+
+.profile .row aside .nav-pills .nav-link.active,
+.profile .row aside .nav-pills .show > .nav-link {
+  color: white;
+  background: black;
+}
+
+.profile .row aside .nav-link {
+  text-align: center;
+  color: black;
+}
+
+.profile .row aside .nav-link:hover {
+  color: black;
+  background: white;
+}
+
+.profile .row .line {
+  margin: auto 0;
+  width: 50%;
+  padding: 5px 0;
+}
+
+.profile .row #v-pills-myprofile .profile__info,
+.profile .row #v-pills-myprofile .profile__contactinfo {
+  margin: 20px 0;
+  padding: 20px;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.profile .row #v-pills-myprofile .profile__info .thead,
+.profile .row #v-pills-myprofile .profile__contactinfo .thead {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+footer {
+  background: black;
+}
+
+footer .footer__aboutus ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .footer__aboutus ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer__icons i {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=profile.css.map */

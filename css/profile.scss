@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.empty {
+  height: 80px;
+}
+
+header {
+  form {
+    margin: 0 auto;
+    input {
+      height: 62px;
+      border-radius: 0;
+      padding: 10px 25px;
+      transition: all 0.15s ease-out;
+    }
+  }
+  .avatar {
+    margin: 0 2%;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+  .navbar-expand-lg {
+    background: black;
+    .navbar-nav {
+      margin: 0 auto;
+      .nav-item {
+        margin-left: 34px;
+        color: #626262;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        &:hover {
+          color: white;
+        }
+      }
+      .current {
+        color: white;
+      }
+      .complete {
+        color: #626262;
+      }
+    }
+  }
+}
+
+.profile {
+  padding: 50px 0;
+  .row {
+    aside {
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        color: white;
+        background: black;
+      }
+      .nav-link {
+        text-align: center;
+        color: black;
+        &:hover {
+          color: black;
+          background: white;
+        }
+      }
+    }
+    .line {
+      margin: auto 0;
+      width: 50%;
+      padding: 5px 0;
+    }
+    #v-pills-myprofile {
+      .profile__info,
+      .profile__contactinfo {
+        margin: 20px 0;
+        padding: 20px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+        .thead {
+          text-transform: uppercase;
+          font-size: 14px;
+          color: rgb(95, 99, 104);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: black;
+  .footer__aboutus {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer__icons {
+    i {
+      margin: 0 10px;
+    }
+  }
+}

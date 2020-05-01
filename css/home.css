@@ -1,0 +1,144 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.empty {
+  height: 80px;
+}
+
+header form {
+  margin: 0 auto;
+}
+
+header form input {
+  height: 62px;
+  border-radius: 0;
+  padding: 10px 25px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+header .avatar {
+  margin: 0 2%;
+}
+
+header .avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .navbar-expand-lg {
+  background: black;
+}
+
+header .navbar-expand-lg .navbar-nav {
+  margin: 0 auto;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-item {
+  margin-left: 34px;
+  color: #626262;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-item:hover {
+  color: white;
+}
+
+header .navbar-expand-lg .navbar-nav .current {
+  color: white;
+}
+
+header .navbar-expand-lg .navbar-nav .complete {
+  color: #626262;
+}
+
+.popularNews .card {
+  border: none;
+}
+
+.popularNews .card .card-body {
+  padding: 15px 0;
+}
+
+.popularNews .card .card-body .card-title {
+  text-transform: uppercase;
+}
+
+.popularNews .card .card-body .card-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.seeing {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.seeing span {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.seeing h4 {
+  margin: 15px 0;
+  text-transform: uppercase;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.seeing h4 a {
+  text-decoration: none;
+  color: black;
+}
+
+.seeing .seeing__content .left .left__title div {
+  height: 80px;
+}
+
+.seeing .seeing__content figure img {
+  width: 100%;
+}
+
+.popularBrand .owl-dots {
+  display: none;
+}
+
+.subcribe {
+  background: #f6f7f8;
+}
+
+.subcribe .subcribe__img img {
+  width: 100%;
+}
+
+footer {
+  background: black;
+}
+
+footer .footer__aboutus ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .footer__aboutus ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer__icons i {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,295 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.empty {
+  height: 80px;
+}
+
+header form {
+  margin: 0 auto;
+}
+
+header form input {
+  height: 62px;
+  border-radius: 0;
+  padding: 10px 25px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+header .avatar {
+  margin: 0 2%;
+}
+
+header .avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .navbar-expand-lg {
+  background: black;
+}
+
+header .navbar-expand-lg .navbar-nav {
+  margin: 0 auto;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-item {
+  margin-left: 34px;
+  color: #626262;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-item:hover {
+  color: white;
+}
+
+header .navbar-expand-lg .navbar-nav .current {
+  color: white;
+}
+
+header .navbar-expand-lg .navbar-nav .complete {
+  color: #626262;
+}
+
+.sortby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 1;
+}
+
+.sortby .dropdown-toggle::after {
+  content: none;
+}
+
+.sortby .fa {
+  -webkit-transition: 0.3s -webkit-transform ease-in-out;
+  transition: 0.3s -webkit-transform ease-in-out;
+  transition: 0.3s transform ease-in-out;
+  transition: 0.3s transform ease-in-out, 0.3s -webkit-transform ease-in-out;
+}
+
+.sortby .show .fa {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.sortby .dropdown-menu {
+  border: none;
+}
+
+.wall .left .list {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  list-style-type: none;
+}
+
+.wall .left .list a {
+  text-decoration: none;
+  color: black;
+}
+
+.wall .left .list a .fas {
+  -webkit-transition: 0.3s -webkit-transform ease-in-out;
+  transition: 0.3s -webkit-transform ease-in-out;
+  transition: 0.3s transform ease-in-out;
+  transition: 0.3s transform ease-in-out, 0.3s -webkit-transform ease-in-out;
+}
+
+.wall .left .list .collapsed .fas {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.wall .left .list .form-check {
+  padding-left: 0;
+}
+
+.wall .left .list #brand-list,
+.wall .left .list #price-list,
+.wall .left .list #material-list {
+  list-style-type: none;
+}
+
+.wall .left .list #brand-list .containerbox,
+.wall .left .list #price-list .containerbox,
+.wall .left .list #material-list .containerbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wall .left .list #brand-list .containerbox input,
+.wall .left .list #price-list .containerbox input,
+.wall .left .list #material-list .containerbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.wall .left .list #brand-list .containerbox input:checked ~ .checkmark:after,
+.wall .left .list #price-list .containerbox input:checked ~ .checkmark:after,
+.wall .left .list #material-list .containerbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.wall .left .list #brand-list .containerbox .checkmark,
+.wall .left .list #price-list .containerbox .checkmark,
+.wall .left .list #material-list .containerbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+}
+
+.wall .left .list #brand-list .containerbox .checkmark:after,
+.wall .left .list #price-list .containerbox .checkmark:after,
+.wall .left .list #material-list .containerbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.wall .left .list #brand-list .checkmark:after,
+.wall .left .list #price-list .checkmark:after,
+.wall .left .list #material-list .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.wall .left .list #color-list {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.wall .left .list #color-list .containerlabel {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wall .left .list #color-list .containerlabel input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.wall .left .list #color-list .containerlabel input:checked ~ .black {
+  background: black;
+}
+
+.wall .left .list #color-list .containerlabel input:checked ~ .grey {
+  background: grey;
+}
+
+.wall .left .list #color-list .containerlabel input:checked ~ .yellow {
+  background: yellow;
+}
+
+.wall .left .list #color-list .containerlabel input:checked ~ .red {
+  background: red;
+}
+
+.wall .left .list #color-list .containerlabel input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.wall .left .list #color-list .containerlabel input:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.wall .left .list #color-list .containerlabel .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.wall .left .list #color-list .containerlabel .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.wall .left .list #color-list .containerlabel .checkmark:after {
+  left: 10px;
+  top: 7px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.wall .left .list #color-list .containerlabel .black {
+  background: black;
+}
+
+.wall .left .list #color-list .containerlabel .grey {
+  background: grey;
+}
+
+.wall .left .list #color-list .containerlabel .yellow {
+  background: yellow;
+}
+
+.wall .left .list #color-list .containerlabel .red {
+  background: red;
+}
+
+footer {
+  background: black;
+}
+
+footer .footer__aboutus ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .footer__aboutus ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer__icons i {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=men.css.map */
