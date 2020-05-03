@@ -29,15 +29,28 @@ header .avatar img {
   border-radius: 50%;
 }
 
-header .navbar-expand-lg {
+header .avatar a {
+  text-decoration: none;
+  color: black;
+}
+
+header .navbar-light {
   background: black;
 }
 
-header .navbar-expand-lg .navbar-nav {
+header .navbar-light .navbar-toggler {
+  border-color: white;
+}
+
+header .navbar-light .navbar-toggler i {
+  color: white;
+}
+
+header .navbar-light .navbar-nav {
   margin: 0 auto;
 }
 
-header .navbar-expand-lg .navbar-nav .nav-item {
+header .navbar-light .navbar-nav .nav-item {
   margin-left: 34px;
   color: #626262;
   line-height: 20px;
@@ -45,16 +58,20 @@ header .navbar-expand-lg .navbar-nav .nav-item {
   letter-spacing: 1px;
 }
 
-header .navbar-expand-lg .navbar-nav .nav-item:hover {
+header .navbar-light .navbar-nav .nav-item:hover {
   color: white;
 }
 
-header .navbar-expand-lg .navbar-nav .current {
+header .navbar-light .navbar-nav .current {
   color: white;
 }
 
-header .navbar-expand-lg .navbar-nav .complete {
+header .navbar-light .navbar-nav .complete {
   color: #626262;
+}
+
+.logincontainer {
+  background: #f7f7f7;
 }
 
 .logincontainer .col-7,
@@ -62,17 +79,9 @@ header .navbar-expand-lg .navbar-nav .complete {
   padding: 0;
 }
 
-.logincontainer .imagine {
-  width: 50%;
-}
-
 .logincontainer .imagine img {
   width: 100%;
-  height: 120vh;
-}
-
-.logincontainer .login {
-  background: #f7f7f7;
+  height: 140vh;
 }
 
 .logincontainer .login form {
@@ -89,8 +98,8 @@ header .navbar-expand-lg .navbar-nav .complete {
 }
 
 .logincontainer .login form input[type="email"],
-.logincontainer .login form input[type="password"] {
-  height: 70px;
+.logincontainer .login form input[type="password"], .logincontainer .login form input[type="text"] {
+  height: 45px;
 }
 
 .logincontainer .login form .login__forgotpw {
@@ -98,7 +107,7 @@ header .navbar-expand-lg .navbar-nav .complete {
   text-decoration: none;
 }
 
-.logincontainer .login form button {
+.logincontainer .login form input[type="submit"] {
   color: white;
   width: 100%;
   height: 45px;
@@ -109,27 +118,6 @@ header .navbar-expand-lg .navbar-nav .complete {
 .logincontainer .login form .login__signup {
   padding-top: 46px;
   text-align: center;
-}
-
-.logincontainer .login form .login__icons {
-  text-align: center;
-}
-
-.logincontainer .login form .login__icons a {
-  font-size: 28px;
-  margin-right: 5px;
-}
-
-.logincontainer .login form .login__icons a .fa-facebook-f {
-  color: #3b5998;
-}
-
-.logincontainer .login form .login__icons a .fa-twitter-square {
-  color: #1da1f2;
-}
-
-.logincontainer .login form .login__icons a .fa-google {
-  color: red;
 }
 
 footer {

@@ -29,15 +29,28 @@ header .avatar img {
   border-radius: 50%;
 }
 
-header .navbar-expand-lg {
+header .avatar a {
+  text-decoration: none;
+  color: black;
+}
+
+header .navbar-light {
   background: black;
 }
 
-header .navbar-expand-lg .navbar-nav {
+header .navbar-light .navbar-toggler {
+  border-color: white;
+}
+
+header .navbar-light .navbar-toggler i {
+  color: white;
+}
+
+header .navbar-light .navbar-nav {
   margin: 0 auto;
 }
 
-header .navbar-expand-lg .navbar-nav .nav-item {
+header .navbar-light .navbar-nav .nav-item {
   margin-left: 34px;
   color: #626262;
   line-height: 20px;
@@ -45,15 +58,15 @@ header .navbar-expand-lg .navbar-nav .nav-item {
   letter-spacing: 1px;
 }
 
-header .navbar-expand-lg .navbar-nav .nav-item:hover {
+header .navbar-light .navbar-nav .nav-item:hover {
   color: white;
 }
 
-header .navbar-expand-lg .navbar-nav .current {
+header .navbar-light .navbar-nav .current {
   color: white;
 }
 
-header .navbar-expand-lg .navbar-nav .complete {
+header .navbar-light .navbar-nav .complete {
   color: #626262;
 }
 
@@ -65,6 +78,7 @@ header .navbar-expand-lg .navbar-nav .complete {
       -ms-flex-pack: end;
           justify-content: flex-end;
   z-index: 1;
+  margin: 5px;
 }
 
 .sortby .dropdown-toggle::after {
