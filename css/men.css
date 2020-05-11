@@ -19,19 +19,35 @@ header form input {
   transition: all 0.15s ease-out;
 }
 
-header .avatar {
-  margin: 0 2%;
+header .right-profile {
+  margin: 0 8%;
+  position: relative;
 }
 
-header .avatar img {
+header .right-profile img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-header .avatar a {
+header .right-profile .dropdown-profile {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background: white;
+  z-index: 1;
+}
+
+header .right-profile .dropdown-profile a {
   text-decoration: none;
   color: black;
+  display: block;
+  padding: 12px 20px;
+}
+
+header .right-profile:hover .dropdown-profile {
+  display: block;
 }
 
 header .navbar-light {
@@ -85,7 +101,8 @@ header .navbar-light .navbar-nav .complete {
   content: none;
 }
 
-.sortby .fa {
+.sortby i {
+  margin: 5px 0;
   -webkit-transition: 0.3s -webkit-transform ease-in-out;
   transition: 0.3s -webkit-transform ease-in-out;
   transition: 0.3s transform ease-in-out;
@@ -287,6 +304,72 @@ header .navbar-light .navbar-nav .complete {
 
 .wall .left .list #color-list .containerlabel .red {
   background: red;
+}
+
+.wall .product .img {
+  position: relative;
+  display: inline-block;
+}
+
+.wall .product .img:hover .img-back {
+  display: inline;
+}
+
+.wall .product .img .img-back {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.wall .product .img .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  z-index: 99;
+}
+
+.wall .product .img .overlay .icon:after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f004';
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.wall .product .img .overlay .icon:hover::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f004';
+}
+
+.wall .product .img .overlay .fav:after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f004';
+  color: black;
+  font-weight: 900;
+}
+
+.wall .product .img .overlay .fav:hover:after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f004';
+  font-weight: 900;
+}
+
+.wall .product .img .overlay .icon {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 5%;
+  left: 90%;
 }
 
 footer {
