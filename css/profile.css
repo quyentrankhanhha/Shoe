@@ -96,18 +96,126 @@ header .navbar-light .navbar-nav .complete {
   padding: 5px 0;
 }
 
-.profile .row #v-pills-myprofile .profile__info,
-.profile .row #v-pills-myprofile .profile__contactinfo {
+.profile .row #v-pills-profile .profile__info,
+.profile .row #v-pills-profile .profile__contactinfo {
   margin: 20px 0;
   padding: 20px;
   border-bottom: 1px solid #d1d1d1;
 }
 
-.profile .row #v-pills-myprofile .profile__info .thead,
-.profile .row #v-pills-myprofile .profile__contactinfo .thead {
+.profile .row #v-pills-profile .profile__info .thead,
+.profile .row #v-pills-profile .profile__contactinfo .thead {
   text-transform: uppercase;
   font-size: 14px;
   color: #5f6368;
+}
+
+.profile .row #v-pills-favorite .products__container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.profile .row #v-pills-favorite .products__container .product__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  text-transform: uppercase;
+}
+
+.profile .row #v-pills-favorite .products__container .product__title {
+  width: 45%;
+  padding: 0 30px;
+}
+
+.profile .row #v-pills-favorite .products__container .products {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.profile .row #v-pills-favorite .products__container .product {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.profile .row #v-pills-favorite .products__container .product img {
+  width: 85px;
+  margin: 0 10px;
+}
+
+.profile .row #v-pills-favorite .products__container .product span {
+  padding: 0 20px;
+}
+
+.profile .row #v-pills-favorite .products__container .price {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .row #v-pills-favorite .products__container .quantity {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .row #v-pills-favorite .products__container .total {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .row #v-pills-favorite .basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin: 20px 0;
 }
 
 footer {

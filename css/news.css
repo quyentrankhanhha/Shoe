@@ -86,22 +86,6 @@ header .navbar-light .navbar-nav .complete {
   color: #626262;
 }
 
-.contact {
-  background: #f7f7f7;
-  padding: 25px 30px;
-  margin: 0 auto;
-}
-
-.contact .contact__content {
-  background: white;
-  border: 1px solid #e5e5e5;
-  padding: 25px 30px;
-}
-
-.contact .contact__content .contact__head {
-  color: #7d7d7d;
-}
-
 footer {
   background: black;
 }
@@ -119,4 +103,4 @@ footer .footer__aboutus ul a {
 footer .footer__icons i {
   margin: 0 10px;
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=news.css.map */

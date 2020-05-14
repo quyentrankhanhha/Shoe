@@ -1,10 +1,3 @@
-let products = [
-    {
-        name: 'Nike Air Force 1 LV8',
-        tag: 'men1',
-        price: 119.9
-    }
-]
 // get favorites from local storage or empty array
 var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 // add class 'fav' to each favorite

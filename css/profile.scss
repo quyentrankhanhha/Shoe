@@ -81,7 +81,7 @@ header {
       width: 50%;
       padding: 5px 0;
     }
-    #v-pills-myprofile {
+    #v-pills-profile {
       .profile__info,
       .profile__contactinfo {
         margin: 20px 0;
@@ -93,6 +93,69 @@ header {
           color: rgb(95, 99, 104);
         }
       }
+    }
+    #v-pills-favorite {
+      .products__container {
+        justify-content: space-around;
+        margin: 0 auto;
+        .product__header {
+          width: 100%;
+          display: flex;
+          margin: 0 auto;
+          padding: 10px 0;
+          justify-content: flex-start;
+          border-bottom: 4px solid lightgrey;
+          text-transform: uppercase
+        }
+        .product__title{
+          width: 45%;
+          padding: 0 30px;
+          }
+        .products {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 15px;
+        }
+        .product {
+          width: 45%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 10px 0;
+          img {
+            width: 85px;
+            margin: 0 10px;
+          }
+          span {
+            padding: 0 20px;
+          }
+        }
+        .price {
+          width: 15%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .quantity {
+          width: 15%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .total {
+          width: 15%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .basket {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          margin: 20px 0;
+        }
     }
   }
 }
