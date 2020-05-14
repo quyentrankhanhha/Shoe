@@ -218,6 +218,10 @@ header .navbar-light .navbar-nav .complete {
   margin: 20px 0;
 }
 
+.profile .row #v-pills-review {
+  height: 40vh;
+}
+
 footer {
   background: black;
 }
